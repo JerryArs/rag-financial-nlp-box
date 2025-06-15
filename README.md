@@ -28,15 +28,9 @@
 ## 开始使用
 
 1. 克隆仓库
-2. 安装依赖：
-   ```bash
-   npm install
-   ```
-3. 运行开发服务器：
-   ```bash
-   npm start
-   ```
-4. 在浏览器中打开 [http://localhost:3000](http://localhost:3000)
+2. 安装依赖和运行服务器：
+具体请查看backend和frontend目录下的note.txt
+
 
 ## 项目结构
 
