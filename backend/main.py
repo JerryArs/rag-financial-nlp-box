@@ -1,7 +1,6 @@
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field, ConfigDict
-from services.ner_service import NERService
 from services.std_service import StdService
 from services.financial_ner_service import FinancialNERService
 from typing import List, Dict, Optional, Literal, Union, Any
@@ -25,8 +24,6 @@ app.add_middleware(
 
 # 初始化各个服务
 logger.info("Initializing services...")
-ner_service = NERService()  # 医疗命名实体识别服务
-logger.info("NER service initialized")
 financial_ner_service = FinancialNERService()  # 金融命名实体识别服务
 logger.info("Financial NER service initialized")
 standardization_service = StdService()  # 术语标准化服务

@@ -122,7 +122,7 @@ for start_idx in tqdm(range(0, len(df), batch_size), desc="Processing batches"):
         } for idx, (_, row) in enumerate(batch_df.iterrows())
     ]
 
-    # 插入数据 - 1024个向量条目，即1024个医疗术语（标准概念）
+    # 插入数据 - 1024个向量条目，即1024个金融术语（标准概念）
     try:
         res = client.insert(
             collection_name=collection_name,

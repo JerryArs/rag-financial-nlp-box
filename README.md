@@ -1,17 +1,13 @@
-# 医疗网站项目
+# 金融术语项目
 
-一个使用 Next.js 和 Tailwind CSS 构建的现代化、响应式医疗网站，提供全面的医疗服务平台。 
-<a href="https://u.geekbang.org/subject/airag/1009927"> 极客时间RAG进阶训练营</a>
-
-学习链接： https://u.geekbang.org/subject/airag/1009927 
-
-
-
-![医疗网站首页](frontend/public/images/medical-page.png)
+一个使用 Next.js 和 Tailwind CSS 构建的金融术语标准化平台。 
 
 
 ## 功能特点
 
+financial_ner_service部分未能找到合适的金融NER大模型
+因此目前这部分暂时用的是字典匹配的方案，导致这部分功能虽然能用但比较受限
+后续再考虑提升这部分的solution
 
 
 ## 技术栈
@@ -39,43 +35,8 @@
 
 ## 项目结构
 
-```
-medical-website/
-├── app/
-│   ├── layout.tsx
-│   ├── page.tsx
-│   └── globals.css
-├── components/
-│   ├── layout/
-│   │   ├── Header.tsx
-│   │   ├── Footer.tsx
-│   │   └── Navigation.tsx
-│   ├── home/
-│   │   ├── HeroSection.tsx
-│   │   ├── ServiceCategories.tsx
-│   │   ├── FeaturedServices.tsx
-│   │   ├── WhyChooseUs.tsx
-│   │   ├── DoctorProfiles.tsx
-│   │   ├── Testimonials.tsx
-│   │   └── NewsSection.tsx
-│   └── ui/
-│       ├── Button.tsx
-│       ├── Card.tsx
-│       └── Icons.tsx
-├── public/
-│   └── images/
-├── styles/
-│   └── globals.css
-└── package.json
-```
 
-## 参与贡献
 
-1. Fork 本仓库
-2. 创建您的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交您的更改 (`git commit -m '添加一些特性'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启一个 Pull Request
 
 ## 许可证
 
