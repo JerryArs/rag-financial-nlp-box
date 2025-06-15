@@ -7,10 +7,6 @@ dist/
 build/
 out/
 
-01.standardization/
-02.abbr_expansion/
-03.model_mapping/
-04.backup/
 
 # Logs
 logs
@@ -20,7 +16,6 @@ yarn-debug.log*
 yarn-error.log*
 notes.txt
 # *.csv
-backend/data/SNOMED_FULL.csv
 
 # Runtime data
 pids
@@ -66,8 +61,8 @@ coverage
 
 # Exclude all .db files
 # *.db
-# backend/db/snomed_bge_m3.db
-backend/db/.snomed_bge_m3.db.lock
+# backend/db/finterm_bge_m3.db
+backend/db/.finterm_bge_m3.db.lock
 
 # Parcel bundler cache
 .cache
@@ -104,5 +99,5 @@ dist/
 
 # Others
 milvus_db/
-snomed_db/
+finterm_db/
 *CONCEPT*.csv
